@@ -1,0 +1,196 @@
+[{
+  "_id": {
+    "$oid": "629a49afda1a33cb747652d9"
+  },
+  "name": "Salah",
+  "team": "LIV",
+  "tpoints": "186",
+  "position": "Forward",
+  "form": [
+    "Goal",
+    "Goal",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4ad6da1a33cb747652db"
+  },
+  "Name": "DeBruyne",
+  "Team": "MCI",
+  "Tpoints": "178",
+  "Position": "Forward",
+  "Form": [
+    "Goal",
+    "Goal",
+    "Goal"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4b03da1a33cb747652dc"
+  },
+  "Name": "Mane",
+  "Team": "LIV",
+  "Tpoints": "175",
+  "Position": "Forward",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Goal"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4b22da1a33cb747652dd"
+  },
+  "Name": "Vardy",
+  "Team": "LEI",
+  "Tpoints": "167",
+  "Position": "Forward",
+  "Form": [
+    "Goal ",
+    "Goal",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4b7bda1a33cb747652de"
+  },
+  "Name": "Alexandar-Arnold",
+  "Team": "LIV",
+  "Tpoints": "166",
+  "Position": "Defense",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4bb3da1a33cb747652df"
+  },
+  "Name": "Aubameyang",
+  "Team": "ARS",
+  "Tpoints": "152",
+  "Position": "Forward",
+  "Form": [
+    "Assist",
+    "Goal",
+    "Goal"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4bf9da1a33cb747652e0"
+  },
+  "Name": "Jimenez",
+  "Team": "WOV",
+  "Tpoints": "147",
+  "Position": "Forward",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4c26da1a33cb747652e1"
+  },
+  "Name": "Van Dijk",
+  "Team": "LIV",
+  "Tpoints": "141",
+  "Position": "Defense",
+  "Form": [
+    "Goal",
+    "Blank",
+    "Blank"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4c5ada1a33cb747652e2"
+  },
+  "Name": "Ings",
+  "Team": "SOU",
+  "Tpoints": "140",
+  "Position": "Forward",
+  "Form": [
+    "Goal",
+    "Goal",
+    "Blank"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4c91da1a33cb747652e3"
+  },
+  "Name": "Robertson",
+  "Team": "LIV",
+  "Tpoints": "137",
+  "Position": "Defense",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Goal"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4cc1da1a33cb747652e4"
+  },
+  "Name": "Rashford",
+  "Team": "MUN",
+  "Tpoints": "134",
+  "Position": "Forward",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4ceada1a33cb747652e5"
+  },
+  "Name": "Richarlison",
+  "Team": "EVE",
+  "Tpoints": "131",
+  "Position": "Forward",
+  "Form": [
+    "Goal",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4d12da1a33cb747652e6"
+  },
+  "Name": "Abraham",
+  "Team": "CHE",
+  "Tpoints": "131",
+  "Position": "Forward",
+  "Form": [
+    "Goal",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4d36da1a33cb747652e7"
+  },
+  "Name": "Firmino",
+  "Team": "LIV",
+  "Tpoints": "130",
+  "Position": "Forward",
+  "Form": [
+    "Assist",
+    "Assist",
+    "Assist"
+  ]
+},{
+  "_id": {
+    "$oid": "629a4d5cda1a33cb747652e8"
+  },
+  "Name": "Lundstram",
+  "Team": "SHU",
+  "Tpoints": "128",
+  "Position": "Forward",
+  "Form": [
+    "Blank",
+    "Blank",
+    "Blank"
+  ]
+}]

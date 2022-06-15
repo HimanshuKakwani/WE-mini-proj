@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+	<title>FPL - Assistant Manager</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="700">
+	<div class="jumbotron center">
+		<div class="container">
+			<h1 class="display-Title d-none d-sm-block">Fantasy Premier League - Assistant Manager</h1>
+			<h1 class="display-Title d-block d-sm-none">FPL - Assistant Manager</h1>
+			<p class="lead d-none d-sm-block">Take your FPL tactics to the the next level by using our selection
+				algorithms
+				backed by
+				statistical analysis to make the most informed decisions for you FPL season.</p>
+			<p class="lead d-block d-sm-none">Take your FPL tactics to the the next level!</p>
+			<p class="lead">
+				<a class="btn btn-success btn-lg" data-toggle="modal" data-target="#signup-modal">Sign
+					Up! - It's Free</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="card card-signup bg-light modal-card">
+						<article class="card-body mx-auto" style="max-width: 400px;">
+							<button type="button" class="btn btn-close" data-dismiss="modal">x</button>
+							<h4 class="card-title mt-3 text-center">Create Account</h4>
+							<p class="text-center">Get started with your free account</p>
+							<p>
+								<a href="" class="btn btn-block google btn-google">
+									<i class="fa fa-google"></i> Login via Google</a>
+								<a href="" class="btn btn-block facebook btn-facebook">
+									<i class="fa fa-facebook"></i> Login via facebook</a>
+							</p>
+							<p class="divider-text">
+								<span class="bg-light">OR</span>
+							</p>
+							<form>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                            </span>
+									</div>
+									<input name="full-name" class="form-control" placeholder="Full name" type="text">
+                        </input>
+								</div>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                            </span>
+									</div>
+									<input name="email" class="form-control" placeholder="Email address" type="email">
+                        </input>
+								</div>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                            <i class="fa fa-phone"></i>
+                            </span>
+									</div>
+									<select class="custom-select" style="max-width: 120px;">
+                            <option selected="">+91</option>
+                           
+                        </select>
+									<input name="phone-number" class="form-control" placeholder="Phone number" type="text">
+                        </input>
+								</div>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+									</div>
+									<input class="form-control" placeholder="Create password" type="password">
+                        </input>
+								</div>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                            <i class="fa fa-lock"></i>
+                            </span>
+									</div>
+									<input class="form-control" placeholder="Repeat password" type="password">
+                        </input>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-block btn-signup"><i class="fa fa-plus" aria-hidden="true"></i> Create Account</button>
+								</div>
+								<p class="text-center">Have an account? <a href="" data-dismiss="modal"
+										data-toggle="modal" data-target="#login-modal">Sign In</a>
+								</p>
+							</form>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="card card-signup bg-light modal-card">
+						<article class="card-body mx-auto" style="max-width: 400px;">
+							<button type="button" class="btn btn-close" data-dismiss="modal">x</button>
+							<h4 class="card-title mt-3 text-center">Login via Social Media</h4>
+							<a href="" class="btn btn-block google btn-google">
+								<i class="fa fa-google"></i> Login via Google</a>
+							<a href="" class="btn btn-block facebook btn-facebook">
+								<i class="fa fa-facebook"></i> Login via facebook</a>
+							</p>
+							<p class="divider-text">
+								<span class="bg-light">OR</span>
+							</p>
+							<form>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                                                <i class="fa fa-envelope"></i>
+                                                </span>
+									</div>
+									<input name="email-login" class="form-control" placeholder="Email address" type="email">
+                                            </input>
+								</div>
+								<div class="form-group input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+                                                <i class="fa fa-lock"></i>
+                                                </span>
+									</div>
+									<input class="form-control" placeholder="Password" type="password">
+                                            </input>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-block btn-signup"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</button>
+								</div>
+								<p class="text-center">Don't have an account? <a href="" data-dismiss="modal"
+										data-toggle="modal" data-target="#signup-modal">Create one!</a>
+								</p>
+							</form>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<nav class="navbar nav-pills navbar-expand-md sticky-top navbar-expand-lg navbar-dark">
+		<div class="container">
+			<img src="assets/images/tactics.png" alt="..."></img>
+			<a class="navbar-brand abs logo">FPL - Assistant Manager
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+			<div class="navbar-collapse collapse" id="collapsingNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#news">News</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#form-center">Form Center</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#features">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="modal" data-target="#login-modal">Sign In</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- <div class="icon-bar">
+		<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="google"><i class="fa fa-google"></i></a>
+		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+		<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	</div> -->
+	<Section id="news">
+		<div class="container content-container">
+			<div class="row">
+				<div class="col-12 section-header">
+					<h2 class="">Fantasy Premier League News</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container col-xs-12 col-md-6 text-center vr-all vr-right vr-bottom news news-top-left"
+					id="one">
+					<div class="container card card-quad">
+						<h3>Introducing...</h3>
+						<img src="assets/images/logopic.png" class="news-image" alt="..."><a
+							href="https://www.vecteezy.com/"></a></img>
+						<div class="card-body">
+							<h5 class="card-title">Welcome!</h5>
+							<p class="card-text">Take your FPL tactics to the the next level by using our selection
+								algorithms backed by statistical analysis to make the most informed decisions for you
+								FPL season.
+							</p>
+						</div>
+					</div>
+					<div class="btn-container btn-news">
+						<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+					</div>
+				</div>
+				<div class="container col-xs-12 col-md-6 text-center vr-all vr-bottom news news-top-right" id="two">
+					<div class="container card card-quad">
+						<h3>PL Zone
+					
+						</h3>
+						<img src="assets/images/32207-5-premier-league-file.png" class="news-image" alt="..."><a
+							href="https://www.vecteezy.com/"></a></img>
+						<div class="card-body">
+							<h5 class="card-title">Premier League News</h5>
+							<p class="card-text">Stay updated on all the latest news in the world of Premier League
+								
+							</p>
+						</div>
+					</div>
+					<div class="btn-container btn-news">
+						<a href="https://www.premierleague.com/news/1646851" target="_blank">
+							<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+						</a>
+					</div>
+				</div>
+
+				
+				<div class="col-md-12 d-none d-md-block hrspacing">
+					<hr class="hrcolor">
+				</div>
+
+				<div class="container col-xs-12 col-md-6 text-center vr-all vr-right vr-bottom news news-bottom-left"
+					id="three">
+					<div class="container card card-quad">
+						<h3>Top Picks for Gameweek </h3>
+						<img src="assets/images/top-picks2.png" class=" news-image" alt="..."><a
+							href="https://www.vecteezy.com/free-vector/analysis"></a></img>
+						<div class="card-body">
+							<h5 class="card-title">Hidden Gems for GW 30</h5>
+							<p class="card-text">We pick 15 players who we believe may shine this game week and into the
+								future.
+							</p>
+						</div>
+					</div>
+					<div class="btn-container btn-news">
+						<a href="https://www.fantasyfootballscout.co.uk/2022/05/05/the-scout-squads-best-players-for-fpl-double-gameweek-36/" target="_blank">
+						<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+					</a>
+						
+					</div>
+				</div>
+				<div class="container col-xs-12 col-md-6 text-center news vr-all news-bottom-right" id="four">
+					<div class="container card card-quad">
+						<h3>Top 10 FPL Players Analysed</h3>
+						<img src="assets/images/analysis.jpg" class=" news-image" alt="..."><a
+							href="https://www.vecteezy.com/free-vector/analysis"></a></img>
+						<div class="card-body">
+							<h5 class="card-title">Become the Best</h5>
+							<p class="card-text">We do a detailed anaylsis of last seasons top 10 FPL players in the world.
+							</p>
+						</div>
+					</div>
+					<div class="btn-container btn-news">
+						<a href="https://www.fplanalytics.com/" target="_blank">
+						<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</Section>
+	<Section id="form-center">
+		<div class="container-wrapper container-wrapper--grey">
+			<div class="container content-container">
+				<div class="row">
+					<div class="col-12 section-header">
+						<h2 class="text-uppercase">Form Center</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container sub-container no-padding">
+						<div class="col-12 no-padding">
+							<div class="container container-header">
+								<div class="row">
+									<div class="col-12 center">
+										<h3 class="sub-section-header">Team of the week</h3>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid container-pitch no-padding">
+								<div class="row row-main no-margin">
+									<div id="pitch" class="col-12 padding-bottom">
+										<div class="row row-players row-pos">
+											<div class="col-custom col-border offset-custom-3 no-bottom-margin mci">
+											</div>
+											<div class="col-custom col-border no-bottom-margin mun">
+											</div>
+											<div class="col-custom col-border no-bottom-margin sou">
+											</div>
+										</div>
+										<div class="row row-players cus-padding">
+											<div class="col-custom offset-custom-3 cus-padding no-top-margin">
+												<p>Aguero<br>17pts<br>MCI</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Ighalo<br>10pts<br>MUN</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Ings<br>7pts<br>SOU</p>
+											</div>
+										</div>
+										<div class="row row-players row-pos">
+											<div class="col-custom col-border offset-custom-3 no-bottom-margin mun">
+											</div>
+											<div class="col-custom col-border no-bottom-margin mci">
+											</div>
+											<div class="col-custom col-border no-bottom-margin shu">
+											</div>
+										</div>
+										<div class="row row-players cus-padding">
+											<div class="col-custom offset-custom-3 cus-padding no-top-margin">
+												<p>Fernandes<br>12pts<br>MUN</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>De Bruyne<br>9pts<br>MCI</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Fleck<br>7pts<br>SHU</p>
+											</div>
+										</div>
+										<div class="row row-players row-pos">
+											<div class="col-custom col-border no-bottom-margin wol">
+											</div>
+											<div class="col-custom col-border no-bottom-margin lei">
+											</div>
+											<div class="col-custom col-border no-bottom-margin liv">
+											</div>
+											<div class="col-custom col-border no-bottom-margin shu">
+											</div>
+										</div>
+										<div class="row row-players cus-padding">
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Doherty<br>14pts<br>WOL</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Pereira<br>9pts<br>LEI</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Alexander-Arnold<br>10pts<br>LIV</p>
+											</div>
+											<div class="col-custom cus-padding no-top-margin">
+												<p>Baldock<br>7pts<br>SHU</p>
+											</div>
+										</div>
+										<div class="row row-players row-pos no-bottom-margin">
+											<div class="col-custom col-border offset-custom-1 positon-gk shu-gk">
+											</div>
+										</div>
+										<div class="row row-players cus-padding">
+											<div class="col-custom offset-custom-1 no-top-margin positon-gk">
+												<p>Henderson<br>11pts<br>SHU</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ////////////////////////////////// -->
+					<div class="container sub-container no-padding">
+						<div class="col-12 no-padding">
+							<div class="container container-header">
+								<div class="row">
+									<div class="col-12 center">
+										<h3 class="sub-section-header">Current Top Players</h3>
+									</div>
+								</div>
+							</div>
+							<div
+								class="container container-sizing top-players no-padding table-responsive sub-container-ctp container-2">
+								<table class="table table-striped table-dark">
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Player</th>
+											<th scope="col">Team</th>
+											<th scope="col">Points</th>
+											<th scope="col">Form</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Salah</td>
+											<td>LIV</td>
+											<td>186</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>AA<i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>DeBruyne</td>
+											<td>MCI</td>
+											<td>178</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Mane</td>
+											<td>LIV</td>
+											<td>175</td>
+											<td class="player-form">AA<i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">4</th>
+											<td>Vardy</td>
+											<td>LEI</td>
+											<td>167</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>AA
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">5</th>
+											<td>Alexander-Arnold</td>
+											<td>LIV</td>
+											<td>166</td>
+											<td class="player-form">AAA</td>
+										</tr>
+										<tr>
+											<th scope="row">6</th>
+											<td>Aubameyang</td>
+											<td>ARS</td>
+											<td>152</td>
+											<td class="player-form">
+												A<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">7</th>
+											<td>Jimenez</td>
+											<td>WOL</td>
+											<td>147</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">8</th>
+											<td>van Dijk</td>
+											<td>Liv</td>
+											<td>141</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">9</th>
+											<td>Ings</td>
+											<td>SOU</td>
+											<td>140</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i><i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">10</th>
+											<td>Robertson</td>
+											<td>LIV</td>
+											<td>137</td>
+											<td class="player-form">
+												<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>AA<i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">11</th>
+											<td>Rashford</td>
+											<td>MUN</td>
+											<td>134</td>
+											<td class="player-form">
+												AAA<i class="fa fa-futbol-o" aria-hidden="true"></i>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">12</th>
+											<td>Richarlison</td>
+											<td>EVE</td>
+											<td>133</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i>AA
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">13</th>
+											<td>Abraham</td>
+											<td>CHE</td>
+											<td>131</td>
+											<td class="player-form">
+												<i class="fa fa-futbol-o" aria-hidden="true"></i>AA
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">14</th>
+											<td>Firmino</td>
+											<td>LIV</td>
+											<td>130</td>
+											<td class="player-form">
+												AAAA
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">15</th>
+											<td>Lundstram</td>
+											<td>SHU</td>
+											<td>128</td>
+											<td class="player-form">
+												<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</Section>
+	<Section id="features">
+		<div class="container-wrapper">
+			<div class="container features-container content-container">
+				<div class="features">
+					<div class="row">
+						<div class="col-12 section-header">
+							<h2 class="text-uppercase">Features</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 d-lg-block col-lg-4">
+							<div class="feature feature-main shadow-sm">
+								<div class="card-header">
+									<h4 class="my-0 font-weight-normal center">
+										<i class="fa fa-cogs d-none d-sm-block" aria-hidden="true"></i>Choose Your Own
+										<!-- Approach <span class="badge badge-danger">NEW!</span></h4> -->
+								</div>
+								<div class="card-body">
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>Overall Risk Analysis</li>
+										<li>Customizable Multi Gameweek Plan</li>
+										<li>Aggressive Vs. Conservative</li>
+										<li>Player Pick Comparison</li>
+									</ul>
+								</div>
+								<!-- <div class="btn-container btn-feature">
+									<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="feature shadow-sm">
+								<div class="card-header">
+									<h4 class="my-0 font-weight-normal center">
+										<i class="fa fa-line-chart d-none d-sm-block" aria-hidden="true"></i>Get Ahead
+										of the Transfer Curve</h4>
+								</div>
+								<div class="card-body">
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>Alerts: Prices & Falls</li>
+										<li>Predict Rises/Falls based on Transfer Activity</li>
+										<li>Predict player likely to rise in value over gameweeks</li>
+									</ul>
+								</div>
+								<!-- <div class="btn-container btn-feature">
+									<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="feature shadow-sm">
+								<div class="card-header">
+									<h4 class="my-0 font-weight-normal">
+										<i class="fa fa-bar-chart d-none d-sm-block" aria-hidden="true"></i>Statistics
+										Behind The Beautiful Game</h4>
+								</div>
+								<div class="card-body">
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>Overall Risk Analysis</li>
+										<li>Customizable Multi Gameweek Plan</li>
+										<li>Aggressive Vs. Conservative</li>
+										<li>Player Pick Comparison</li>
+									</ul>
+								</div>
+								<!-- <div class="btn-container btn-feature">
+									<button type="button" class="btn btn-sm btn-outline-success">Read More</button>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</Section>
+	<footer>
+		<div class="container-wrapper container-wrapper--purple">
+			<div class="container content-container footer-container">
+				<div class="row">
+					<div class="col-12 center">
+						<h2 class="d-none d-sm-block">Fantasy Premier League - Assistant Manager</h2>
+						<h2 class="d-block d-sm-none">FPL - Assistant Manager</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 footnotes center">
+						<ul>
+							<li><a>FAQ</a>
+							</li>
+							<li><a>Cookie Policy</a>
+							</li>
+							<li><a href="#">Back to top</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</html>

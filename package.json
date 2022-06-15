@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16"
+  },
+  "name": "milestone-project-one-17",
+  "description": "Fantasy Premier League - Assistant Manager is the front end piece of what I hope to be able to build on in the future to provide a full set of tools to FPL (Fantasy Premier League) players in order to assist them to maximise their weekly points total to give them a significantly better chance of winning their mini-league and also push them up the global leaderboard.",
+  "version": "1.0.0",
+  "main": "bd.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Institute-Submissions/Milestone-Project-One-17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Institute-Submissions/Milestone-Project-One-17/issues"
+  },
+  "homepage": "https://github.com/Code-Institute-Submissions/Milestone-Project-One-17#readme"
+}
